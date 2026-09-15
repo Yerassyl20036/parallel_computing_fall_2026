@@ -8,7 +8,7 @@
 | Неделя | Тема | Статус |
 |---:|---|---|
 | 1 | Профилирование последовательного Python-кода | готово |
-| 2 | threading vs multiprocessing (GIL) | — |
+| 2 | threading vs multiprocessing (GIL) | готово |
 | 3 | joblib + Monte-Carlo | — |
 | 4 | Векторизация | — |
 | 5 | Dask | — |

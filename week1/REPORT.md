@@ -9,6 +9,7 @@
 | Номер варианта     | **5**                                                                   |
 | Параметры варианта | N = 460 точек, размерность = 4, seed = 1185                             |
 | Дата выполнения    | 2026-09-15                                                              |
+| Репозиторий        | https://github.com/Yerassyl20036/parallel_computing_fall_2026 (папка `week1/`) |
 
 ---
 
@@ -143,5 +144,7 @@ $$S(P) = \frac{1}{(1-p) + p/P}$$
 - `starter_profiled.py` — копия с декоратором `@profile` для `line_profiler`/`kernprof`.
 - `bonus_numpy.py` — векторизованные реализации (NumPy broadcasting, `scipy.cdist`) + сверка с baseline через `np.allclose`.
 - `profiling_outputs/` — сохранённые выводы всех запусков (`baseline_run.txt`, `cprofile_output.txt`, `kernprof_output.txt`, `memory_profiler_output.txt`, `scaling_experiment.txt`, `bonus_numpy_output.txt`).
+
+**Ссылка на репозиторий:** https://github.com/Yerassyl20036/parallel_computing_fall_2026 (папка `week1/`).
 
 

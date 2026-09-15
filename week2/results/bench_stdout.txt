@@ -1,0 +1,21 @@
+Вариант 5: n_tasks=4, cpu_n=280000, io_sleep=0.40 с, logical CPUs=10
+
+=== cpu_bound ===
+  sequential           min=1.437 с  median=1.438 с
+  threads   w=1         min=1.430 с  median=1.435 с
+  threads   w=2         min=1.446 с  median=1.447 с
+  threads   w=4         min=1.436 с  median=1.440 с
+  processes w=1         min=1.468 с  median=1.483 с
+  processes w=2         min=0.770 с  median=0.772 с
+  processes w=4         min=0.418 с  median=0.420 с
+
+=== io_bound ===
+  sequential           min=1.611 с  median=1.614 с
+  threads   w=1         min=1.615 с  median=1.616 с
+  threads   w=2         min=0.808 с  median=0.809 с
+  threads   w=4         min=0.402 с  median=0.405 с
+  processes w=1         min=1.686 с  median=1.702 с
+  processes w=2         min=0.887 с  median=0.889 с
+  processes w=4         min=0.481 с  median=0.484 с
+
+Сохранено: results/bench.json
