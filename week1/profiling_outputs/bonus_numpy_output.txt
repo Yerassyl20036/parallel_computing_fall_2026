@@ -1,0 +1,10 @@
+Вариант 5: N=460 точек, размерность=4, seed=1185
+
+реализация                            min, с     median, с     speedup
+----------------------------------------------------------------------
+чистый Python (baseline)              0.0863        0.0872        1.00x
+NumPy (broadcasting)                  0.0057        0.0062       15.07x
+SciPy cdist                           0.0004        0.0004      225.88x
+
+NumPy  vs baseline: allclose = True
+SciPy  vs baseline: allclose = True

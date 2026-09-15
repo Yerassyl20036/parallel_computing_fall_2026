@@ -1,0 +1,2 @@
+N=460: min=0.0870 s, median=0.0875 s
+N=920: min=0.3480 s, median=0.3508 s

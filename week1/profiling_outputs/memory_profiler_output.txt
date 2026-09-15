@@ -1,0 +1,24 @@
+/Users/yerassyl/Library/Python/3.14/lib/python/site-packages/memory_profiler.py:752: DeprecationWarning: 'asyncio.iscoroutinefunction' is deprecated and slated for removal in Python 3.16; use inspect.iscoroutinefunction() instead
+  if iscoroutinefunction(func):
+Вариант 5: N=460 точек, размерность=4, seed=1185
+Матрица расстояний 460x460 построена за 47.102 с
+Filename: starter_profiled.py
+
+Line #    Mem usage    Increment  Occurrences   Line Contents
+=============================================================
+    27   27.047 MiB   27.047 MiB           1   @profile  # noqa: F821 — вводится kernprof-ом во время запуска
+    28                                         def compute_pairwise_distances(points):
+    29   27.047 MiB    0.000 MiB           1       n = len(points)
+    30   28.766 MiB    1.719 MiB         461       dist = [[0.0] * n for _ in range(n)]
+    31   29.422 MiB -5860.672 MiB         461       for i in range(n):
+    32   29.438 MiB -2698139.953 MiB      212060           for j in range(n):
+    33   29.438 MiB -2692294.062 MiB      211600               if i == j:
+    34   29.422 MiB -5849.562 MiB         460                   continue
+    35   29.438 MiB -2686445.688 MiB      211140               s = 0.0
+    36   29.438 MiB -13432271.391 MiB     1055700               for k in range(len(points[i])):
+    37   29.438 MiB -10745815.156 MiB      844560                   diff = points[i][k] - points[j][k]
+    38   29.438 MiB -10745819.766 MiB      844560                   s += diff * diff
+    39   29.438 MiB -2686461.172 MiB      211140               dist[i][j] = math.sqrt(s)
+    40   16.422 MiB  -13.000 MiB           1       return dist
+
+
