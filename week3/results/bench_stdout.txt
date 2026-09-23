@@ -1,0 +1,8 @@
+Вариант 5: n_batches=13, points_per_batch=900000, seed=2065, logical CPUs=10
+  sequential            min=2.800 с  median=2.817 с  Pi≈3.14154
+  joblib n_jobs= 1     min=2.784 с  median=2.787 с  Pi≈3.14154
+  joblib n_jobs= 2     min=1.530 с  median=1.543 с  Pi≈3.14154
+  joblib n_jobs= 4     min=0.893 с  median=0.896 с  Pi≈3.14154
+  joblib n_jobs=-1     min=0.482 с  median=0.493 с  Pi≈3.14154
+
+Сохранено: results/bench.json

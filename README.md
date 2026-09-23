@@ -9,7 +9,7 @@
 |---:|---|---|
 | 1 | Профилирование последовательного Python-кода | готово |
 | 2 | threading vs multiprocessing (GIL) | готово |
-| 3 | joblib + Monte-Carlo | — |
+| 3 | joblib + Monte-Carlo Pi | готово |
 | 4 | Векторизация | — |
 | 5 | Dask | — |
 | 6 | Ray | — |
@@ -31,6 +31,7 @@
 |---:|---|
 | 1 | N = 460, D = 4, seed = 1185 |
 | 2 | cpu_n = 280 000, io_sleep = 0.40 с |
+| 3 | n_batches = 13, points_per_batch = 900 000, seed = 2065 |
 
 (Параметры дальнейших недель — по мере выполнения работ.)
 
@@ -46,4 +47,14 @@ python3 -m cProfile -s cumulative starter.py --variant 5
 kernprof -l -v starter_profiled.py --variant 5
 python3 -m memory_profiler starter_profiled.py --variant 5
 python3 bonus_numpy.py --variant 5
+```
+
+## Генерация docx для сдачи
+
+Отчёт в Moodle сдаётся одним файлом `weekN/Отчёт_Лабораторная_N_вариант5.docx`.
+Он собирается из `weekN/REPORT.md` конвертером в корне репозитория:
+
+```bash
+python3 render_report.py week3/REPORT.md
+# -> week3/Отчёт_Лабораторная_3_вариант5.docx
 ```
